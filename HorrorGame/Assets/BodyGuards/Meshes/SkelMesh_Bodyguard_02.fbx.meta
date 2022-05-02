@@ -1,0 +1,303 @@
+fileFormatVersion: 2
+guid: 765e2fde8c84f094e99304c6198491ea
+labels:
+- Agent
+- Character
+- Bodyguard
+- Human
+- Bouncer
+timeCreated: 1480134844
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: BodyGuard02_Hands
+    100002: BodyGuard02_Head
+    100004: BodyGuard02_Shoes
+    100006: BodyGuard02_Torso
+    100008: BodyGuard_2_Pants
+    100010: Head
+    100012: Hips
+    100014: LeftArm
+    100016: LeftArmRoll
+    100018: LeftFoot
+    100020: LeftForeArm
+    100022: LeftForeArmRoll
+    100024: LeftHand
+    100026: LeftHandIndex1
+    100028: LeftHandIndex2
+    100030: LeftHandIndex3
+    100032: LeftHandIndex4
+    100034: LeftHandMiddle1
+    100036: LeftHandMiddle2
+    100038: LeftHandMiddle3
+    100040: LeftHandMiddle4
+    100042: LeftHandPinky1
+    100044: LeftHandPinky2
+    100046: LeftHandPinky3
+    100048: LeftHandPinky4
+    100050: LeftHandProp
+    100052: LeftHandRing1
+    100054: LeftHandRing2
+    100056: LeftHandRing3
+    100058: LeftHandRing4
+    100060: LeftHandThumb1
+    100062: LeftHandThumb2
+    100064: LeftHandThumb3
+    100066: LeftHandThumb4
+    100068: LeftLeg
+    100070: LeftLegRoll
+    100072: LeftShoulder
+    100074: LeftToeBase
+    100076: LeftToeBase_END
+    100078: LeftUpLeg
+    100080: LeftUpLegRoll
+    100082: Neck
+    100084: RightArm
+    100086: RightArmRoll
+    100088: RightFoot
+    100090: RightForeArm
+    100092: RightForeArmRoll
+    100094: RightHand
+    100096: RightHandIndex1
+    100098: RightHandIndex2
+    100100: RightHandIndex3
+    100102: RightHandIndex4
+    100104: RightHandMiddle1
+    100106: RightHandMiddle2
+    100108: RightHandMiddle3
+    100110: RightHandMiddle4
+    100112: RightHandPinky1
+    100114: RightHandPinky2
+    100116: RightHandPinky3
+    100118: RightHandPinky4
+    100120: RightHandProp
+    100122: RightHandRing1
+    100124: RightHandRing2
+    100126: RightHandRing3
+    100128: RightHandRing4
+    100130: RightHandThumb1
+    100132: RightHandThumb2
+    100134: RightHandThumb3
+    100136: RightHandThumb4
+    100138: RightLeg
+    100140: RightLegRoll
+    100142: RightShoulder
+    100144: RightToeBase
+    100146: RightToeBase_END
+    100148: RightUpLeg
+    100150: RightUpLegRoll
+    100152: Root
+    100154: //RootNode
+    100156: Spine
+    100158: Spine1
+    100160: Armature
+    100162: Camera
+    100164: Head_end
+    100166: LeftArmRoll_end
+    100168: LeftForeArmRoll_end
+    100170: LeftHandIndex4_end
+    100172: LeftHandMiddle4_end
+    100174: LeftHandPinky4_end
+    100176: LeftHandProp_end
+    100178: LeftHandRing4_end
+    100180: LeftHandThumb4_end
+    100182: LeftLegRoll_end
+    100184: LeftToeBase_END_end
+    100186: LeftUpLegRoll_end
+    100188: Point
+    100190: RightArmRoll_end
+    100192: RightForeArmRoll_end
+    100194: RightHandIndex4_end
+    100196: RightHandMiddle4_end
+    100198: RightHandPinky4_end
+    100200: RightHandProp_end
+    100202: RightHandRing4_end
+    100204: RightHandThumb4_end
+    100206: RightLegRoll_end
+    100208: RightToeBase_END_end
+    100210: RightUpLegRoll_end
+    400000: BodyGuard02_Hands
+    400002: BodyGuard02_Head
+    400004: BodyGuard02_Shoes
+    400006: BodyGuard02_Torso
+    400008: BodyGuard_2_Pants
+    400010: Head
+    400012: Hips
+    400014: LeftArm
+    400016: LeftArmRoll
+    400018: LeftFoot
+    400020: LeftForeArm
+    400022: LeftForeArmRoll
+    400024: LeftHand
+    400026: LeftHandIndex1
+    400028: LeftHandIndex2
+    400030: LeftHandIndex3
+    400032: LeftHandIndex4
+    400034: LeftHandMiddle1
+    400036: LeftHandMiddle2
+    400038: LeftHandMiddle3
+    400040: LeftHandMiddle4
+    400042: LeftHandPinky1
+    400044: LeftHandPinky2
+    400046: LeftHandPinky3
+    400048: LeftHandPinky4
+    400050: LeftHandProp
+    400052: LeftHandRing1
+    400054: LeftHandRing2
+    400056: LeftHandRing3
+    400058: LeftHandRing4
+    400060: LeftHandThumb1
+    400062: LeftHandThumb2
+    400064: LeftHandThumb3
+    400066: LeftHandThumb4
+    400068: LeftLeg
+    400070: LeftLegRoll
+    400072: LeftShoulder
+    400074: LeftToeBase
+    400076: LeftToeBase_END
+    400078: LeftUpLeg
+    400080: LeftUpLegRoll
+    400082: Neck
+    400084: RightArm
+    400086: RightArmRoll
+    400088: RightFoot
+    400090: RightForeArm
+    400092: RightForeArmRoll
+    400094: RightHand
+    400096: RightHandIndex1
+    400098: RightHandIndex2
+    400100: RightHandIndex3
+    400102: RightHandIndex4
+    400104: RightHandMiddle1
+    400106: RightHandMiddle2
+    400108: RightHandMiddle3
+    400110: RightHandMiddle4
+    400112: RightHandPinky1
+    400114: RightHandPinky2
+    400116: RightHandPinky3
+    400118: RightHandPinky4
+    400120: RightHandProp
+    400122: RightHandRing1
+    400124: RightHandRing2
+    400126: RightHandRing3
+    400128: RightHandRing4
+    400130: RightHandThumb1
+    400132: RightHandThumb2
+    400134: RightHandThumb3
+    400136: RightHandThumb4
+    400138: RightLeg
+    400140: RightLegRoll
+    400142: RightShoulder
+    400144: RightToeBase
+    400146: RightToeBase_END
+    400148: RightUpLeg
+    400150: RightUpLegRoll
+    400152: Root
+    400154: //RootNode
+    400156: Spine
+    400158: Spine1
+    400160: Armature
+    400162: Camera
+    400164: Head_end
+    400166: LeftArmRoll_end
+    400168: LeftForeArmRoll_end
+    400170: LeftHandIndex4_end
+    400172: LeftHandMiddle4_end
+    400174: LeftHandPinky4_end
+    400176: LeftHandProp_end
+    400178: LeftHandRing4_end
+    400180: LeftHandThumb4_end
+    400182: LeftLegRoll_end
+    400184: LeftToeBase_END_end
+    400186: LeftUpLegRoll_end
+    400188: Point
+    400190: RightArmRoll_end
+    400192: RightForeArmRoll_end
+    400194: RightHandIndex4_end
+    400196: RightHandMiddle4_end
+    400198: RightHandPinky4_end
+    400200: RightHandProp_end
+    400202: RightHandRing4_end
+    400204: RightHandThumb4_end
+    400206: RightLegRoll_end
+    400208: RightToeBase_END_end
+    400210: RightUpLegRoll_end
+    4300000: BodyGuard02_Head
+    4300002: BodyGuard02_Shoes
+    4300004: BodyGuard_2_Pants
+    4300006: BodyGuard02_Torso
+    4300008: BodyGuard02_Hands
+    7400000: Take 001
+    7400002: Armature|Armature|Take 001|BaseLayer
+    9500000: //RootNode
+    13700000: BodyGuard02_Hands
+    13700002: BodyGuard02_Head
+    13700004: BodyGuard02_Shoes
+    13700006: BodyGuard02_Torso
+    13700008: BodyGuard_2_Pants
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths:
+    - Armature/Root/Hips/RightUpLeg
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
