@@ -7,14 +7,21 @@ public class CameraControl : MonoBehaviour
     public Camera camera;
     public Rigidbody rb;
     float Sensitivity = 3f;
-    float MoveSensitivity = 50;
+    float MoveSensitivity = 500;
+    float JumpPwr = 1.25f;
     float maxSprint = 0.75f;
     float walkSpeed = 0.25f;
     float currentSpeed = 0;
 
     public bool isSprinting = false;
+    public bool isJump = false;
 
     public int roty = 0;
+
+    private void OnCollisionStay(Collision collision)
+    {
+        isJump = true;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -22,10 +29,15 @@ public class CameraControl : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 
         isSprinting = Input.GetKey(KeyCode.LeftShift);
+
+        if (Input.GetKey(KeyCode.Escape))
+            Cursor.lockState = CursorLockMode.None;
+        else
+            Cursor.lockState = CursorLockMode.Locked;
 
         if (isSprinting)
             currentSpeed = maxSprint;
@@ -42,15 +54,6 @@ public class CameraControl : MonoBehaviour
             rb.velocity = new Vector3(-currentSpeed, rb.velocity.y, rb.velocity.z);
         }
 
-        if (rb.velocity.y > currentSpeed)
-        {
-            rb.velocity = new Vector3(rb.velocity.x, currentSpeed, rb.velocity.z);
-        }
-
-        if (rb.velocity.y < -currentSpeed)
-        {
-            rb.velocity = new Vector3(rb.velocity.x, -currentSpeed, rb.velocity.z);
-        }
 
         if (rb.velocity.z > currentSpeed)
         {
@@ -62,25 +65,25 @@ public class CameraControl : MonoBehaviour
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, -currentSpeed);
         }
 
-        if (Input.GetAxis("Mouse X") > 0)
+        if (Input.GetAxis("Mouse X") > 0 || Input.GetKey(KeyCode.L))
         {
             transform.Rotate(Vector3.up*Sensitivity, Space.Self);
         }
 
-        if (Input.GetAxis("Mouse X") < 0)
+        if (Input.GetAxis("Mouse X") < 0 || Input.GetKey(KeyCode.J))
         {
             transform.Rotate(-Vector3.up * Sensitivity, Space.Self);
         }
 
         //print(camera.transform.localRotation.eulerAngles.x);
 
-        if (Input.GetAxis("Mouse Y") > 0 && roty < 25) 
+        if ((Input.GetAxis("Mouse Y") > 0 || Input.GetKey(KeyCode.I)) && roty < 25) 
         {
             camera.transform.Rotate(-Vector3.right * Sensitivity, Space.Self);
             roty++;
         }
 
-        if (Input.GetAxis("Mouse Y") < 0 && roty > -25)
+        if ((Input.GetAxis("Mouse Y") < 0 || Input.GetKey(KeyCode.K)) && roty > -25)
         {
             camera.transform.Rotate(Vector3.right * Sensitivity, Space.Self);
             roty--;
@@ -104,6 +107,12 @@ public class CameraControl : MonoBehaviour
         if (Input.GetAxis("Vertical") < 0)
         {
             rb.AddRelativeForce(-Vector3.forward * MoveSensitivity);
+        }
+
+        if (Input.GetAxis("Jump") != 0 && isJump)
+        {
+            rb.AddRelativeForce(Vector3.up*MoveSensitivity*JumpPwr);
+            isJump = false;
         }
     }
 }
